@@ -19,6 +19,8 @@ namespace Letter_Occurrence_Counter
             // check for valid English letters if entered string is not empty
             if (!(str.Trim().Equals(String.Empty)) || str != null)
             {
+                var listOfStrings = Helper.util(str);
+                Printer.PrintIt(listOfStrings, str);
             }
             else
             {
@@ -29,9 +31,9 @@ namespace Letter_Occurrence_Counter
     }
 
 
-    class Printer
+    static class Printer
     {
-        public void PrintIt(Dictionary<char, int> listOfStrings)
+        public static void PrintIt(Dictionary<char, int> listOfStrings, string str)
         {
             foreach (KeyValuePair<char, int> c in listOfStrings)
             {

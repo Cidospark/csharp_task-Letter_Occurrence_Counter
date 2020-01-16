@@ -42,7 +42,9 @@ namespace Letter_Occurrence_Counter
             {
                 Console.Write($"\t{c.Value}");
             }
-            
+
+            Console.WriteLine($"\n\nTotal letters counted: {Helper.validLettersCounts} out of {str.Length} characters entered");
+            Console.ReadLine();
         }
     }
 }

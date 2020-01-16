@@ -27,4 +27,22 @@ namespace Letter_Occurrence_Counter
             }
         }
     }
+
+
+    class Printer
+    {
+        public void PrintIt(Dictionary<char, int> listOfStrings)
+        {
+            foreach (KeyValuePair<char, int> c in listOfStrings)
+            {
+                Console.Write($"\t{c.Key}");
+            }
+            Console.WriteLine();
+            foreach (KeyValuePair<char, int> c in listOfStrings)
+            {
+                Console.Write($"\t{c.Value}");
+            }
+            
+        }
+    }
 }

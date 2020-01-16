@@ -17,6 +17,10 @@ namespace Letter_Occurrence_Counter
 
             foreach (char c in str)
             {
+                if (char.IsWhiteSpace(c))
+                {
+                    Console.WriteLine($"White space is not allowed.");
+                }
                 if (Char.IsLetter(c))
                 {
                     int incr = 0;

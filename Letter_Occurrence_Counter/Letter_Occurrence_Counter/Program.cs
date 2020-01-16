@@ -10,6 +10,21 @@ namespace Letter_Occurrence_Counter
     {
         static void Main(string[] args)
         {
+            // prompt and accept string from user
+            Console.WriteLine("Task 1");
+            Console.Write("Enter a string:\t");
+            var str = String.Empty;
+            str = Console.ReadLine();
+
+            // check for valid English letters if entered string is not empty
+            if (!(str.Trim().Equals(String.Empty)) || str != null)
+            {
+            }
+            else
+            {
+                Console.WriteLine("You need to enter at least a character");
+
+            }
         }
     }
 }
